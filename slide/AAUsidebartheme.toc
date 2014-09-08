@@ -5,7 +5,6 @@
 \beamer@sectionintoc {2}{Centralidade do Grau}{5}{0}{2}
 \beamer@sectionintoc {3}{Centralidade de Intermedia\IeC {\c c}\IeC {\~a}o}{6}{0}{3}
 \beamer@sectionintoc {4}{Centralidade de Proximidade}{7}{0}{4}
-\beamer@sectionintoc {5}{Excentricidade}{8}{0}{5}
-\beamer@sectionintoc {6}{Conclus\IeC {\~a}o}{9}{0}{6}
-\beamer@sectionintoc {7}{Feedback}{10}{0}{7}
-\beamer@subsectionintoc {7}{1}{Contato para Informa\IeC {\c c}oes}{10}{0}{7}
+\beamer@sectionintoc {5}{Centralidade de Efici\IeC {\^e}ncia}{8}{0}{5}
+\beamer@sectionintoc {6}{Centralidade de Excentricidade}{9}{0}{6}
+\beamer@sectionintoc {7}{Conclus\IeC {\~a}o}{10}{0}{7}
