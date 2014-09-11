@@ -10,17 +10,17 @@
 \newcommand{\chref}[2]{\href{#1}{{\usebeamercolor[bg]{AAUsidebar}#2}}%
 }
 
-\title[Titulo]{\textbf{MEDIDAS DE CENTRALIDADE}}
+\title[Medidas de Centralidade]{\textbf{MEDIDAS DE CENTRALIDADE}}
 
 \subtitle{}  
 
 \date{\today}
 
-\author[Silvana Trindade, Guilherme Bizzani, Rodrigo Levinski, Watson Vieira Costa Junior] 
+\author[Silvana,  Rodrigo, Guilherme,  Watson] 
 {
   Silvana Trindade\\
-  Guilherme Bizzani\\
   Rodrigo Levinski\\
+  Guilherme Bizzani\\
   Watson Vieira Costa Junior\\
 }
 
@@ -42,67 +42,108 @@
 \begin{frame}[plain,noframenumbering] 
   \titlepage
 \end{frame}}
-\begin{frame}{Sumário}{}
+\begin{frame}{Sumário}{Sumário}
 \tableofcontents
 \end{frame}
 
 
 \section{Medidas de Centralidade}
 
-\begin{frame}{Medidas de Centralidade}{Medidas de Centralidade}
+\begin{frame}{Medidas de Centralidade}{Centralidade}
 \begin{itemize}
 \item Que nós são importantes dentro de uma rede?
-\item Quais são importantes estruturalmente e relevantes para o fluxo de informação na rede.
+\item Quais são importantes estruturalmente e relevantes para o fluxo de informação na rede?
+\item Intuitivamente, os vértices mais centrais são aqueles que a partir dos quais podemos atingir qualquer outro com mais. 
+facilidade ou rapidez
 \end{itemize}
 \end{frame}
 
-
-\subsection{Centralidade}
-\begin{frame}{Introdução}{Centralidade}
-
+\section{Rede Sobrevivente}
+\begin{frame}{Rede Sobrevivente}{Rede Sobrevivente}
+\begin{figure}[htp]
+     \centering
+     \includegraphics[scale=0.4]{vianet.png}
+     \caption{Topologia Física de Rede Óptica VIA Network.}
+      \label{fig:vianet}
+\end{figure}
 \end{frame}
-
 \section{Centralidade do Grau}
 \begin{frame}{Centralidade do Grau}{Centralidade do Grau}
-
+\begin{itemize}
+\item \textit{Definição:} De modo mais simples dizemos que conforme o número de arestas em um vértice, mais central ele é pelo fato pois o contato com mais vertices vizinhos maior é o seu valor como um canal de informações.
+\begin{equation}
+d_k= \sum_{j=1}^n a_{kj},
+\end{equation}
+onde o grau do vértice $d_k$ constituído pela soma da matriz de adjacências $a_{kj}$
+\begin{equation}
+C'_D(v_k) = \frac{d_k}{n-1}.
+\end{equation}
+Na centralidade relativa é utilizada a proporção do grau em relação ao tamanho do grafo.
+\item Exemplo utilizando VIA Network.
+\end{itemize}
 \end{frame}
 
 \section{Centralidade de Intermediação}
-\begin{frame}{Centralidade de Intermediação}{Centralidade de Intermediação}
+\begin{frame}{Centralidade de Intermediação}{Intermediação}
 \begin{itemize}
-\item Geodésicas
-\item Grafos conexos ou não
+\item Grafos conexos e desconexos (FREEMAN,1977)
+\item Geodésicas: caminho de tamanho mínimo entre um nó origem $s$ e destino $t$
 \item Betweenness Centrality\begin{equation} 
 		c_B(v_k)=\sum_{1\leqslant i < j \leqslant n}^{n} b_{ij}(v_k) 
 		\end{equation}
+\item Limite
+\begin{equation}
+0 \leqslant c_B(v_k) \leqslant\frac{N^2-3N+2}{2}
+\end{equation}
 \item Importância da medida
-\item Exemplo utilizando a rede VIA Network
+\item Exemplo utilizando a rede VIA Network.
 \end{itemize}
 \end{frame}
 
 \section{Centralidade de Proximidade}
-\begin{frame}{Centralidade de Proximidade}{Centralidade de Proximidade}
+\begin{frame}{Centralidade de Proximidade}{Proximidade}
+\begin{itemize}
+\item \textit{Definição:} Em vários contextos, mais importante que ter muitas conexões é não estar longe demais dos demais nós. Proposta por Sabidussi em 1966, a centralidade de proximidade é baseada na soma das distâncias de um vértice em relação aos demais vértices do grafo.
 
+\begin{equation}
+C_c(v_k) = \frac{1}{\sum_{j = 1}^n dist(v_j,v_k)} 
+\end{equation}
+\item Exemplo utilizando VIA Network
+\end{itemize}
 \end{frame}
 
-\section{Centralidade de Eficiência}
-\begin{frame}{Centralidade de Eficiência}{Centralidade de Eficiência}
 
+\section{Centralidade de Eficiência}
+\begin{frame}{Centralidade de Eficiência}{Eficiência}
+\textit{Definição: }
+\begin{itemize}
+\item Determinar um local de modo que minimize o tempo máximo de viagem entre o mesmo 
+e todas as demais localizações
+\item HAGE e HARARY, em 1995, propuseram uma medida chamada centralidade de eficiência
+\item baseada  no  conceito  de  excentricidade  de  um  vértice
+\item esta medida indica que um vértice é mais eficiente quanto menor for a sua 
+\item \begin{equation}
+C_{eff}(v_k)= \frac{1}{e(v_k)},
+\end{equation}
+onde $e(v_k)$ = $max\{dist(v_j,v_k):v \in V\}$
+\end{itemize}
+
+excentricidade.
 \end{frame}
 
 \section{Centralidade de Excentricidade}
-\begin{frame}{Excentricidade }{Centralidade de Excentricidade}
-
+\begin{frame}{Centralidade de Excentricidade }{Excentricidade}
+A excentricidade de um nó traduz a ideia do quanto um nó $s$ esta distante dos demais do grafo $G$ (BORBA,2013).
 \end{frame}
 
 \section{Conclusão}
-\begin{frame}{Conclusão}{Conclusão}
-conclusao
+\begin{frame}{Conclusão }{Conclusão}
+O grau é uma medida da influência direta que um vértice tem em relação a seus contatos, a 
+proximidade está relacionada com o tempo que uma informação leva para ser compartilhada por todos os vértices na rede, e a intermediação de um vértice pode ser considerada como o controle da comunicação entre todos os demais pares de vértices da rede (FREITAS,2010). 
 \end{frame}
-
 {\aauwavesbg
 \begin{frame}[plain,noframenumbering]
-  \finalpage{Obrigado pela atenção!}
+  \finalpage{Agradecemos sua atenção!}
 \end{frame}}
 
 \end{document}

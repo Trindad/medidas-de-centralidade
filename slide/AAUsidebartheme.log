@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.22)  8 SEP 2014 16:00
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.22)  11 SEP 2014 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1759,99 +1759,102 @@ Package pdftex.def Info: AAUgraphics/icon.png used on input line 47.
 
  <./AAUgraphics/Logo.png> <./AAUgraphics/icon.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6.8> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 57.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 59.
 File: AAUgraphics/Logo.png Graphic file (type png)
  <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 57.
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 59.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
 
 <use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 57.
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 59.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [3
 
-]
+] <vianet.png, id=101, 439.6425pt x 346.29375pt>
+File: vianet.png Graphic file (type png)
+
+<use vianet.png>
+Package pdftex.def Info: vianet.png used on input line 69.
+(pdftex.def)             Requested size: 175.85388pt x 138.51503pt.
 File: AAUgraphics/Logo.png Graphic file (type png)
  <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 63.
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 69.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 63.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 69.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [4
 
-]
+ <./vianet.png>]
 File: AAUgraphics/Logo.png Graphic file (type png)
  <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 68.
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 84.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 68.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 84.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [5
 
 ]
 File: AAUgraphics/Logo.png Graphic file (type png)
- <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 81.
+
+<use AAUgraphics/Logo.png>
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 101.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 81.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 101.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [6
 
 ]
 File: AAUgraphics/Logo.png Graphic file (type png)
- <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 86.
+
+<use AAUgraphics/Logo.png>
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 113.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 86.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 113.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [7
 
 ]
 File: AAUgraphics/Logo.png Graphic file (type png)
- <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 91.
+
+<use AAUgraphics/Logo.png>
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 132.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 91.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 132.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [8
 
 ]
 File: AAUgraphics/Logo.png Graphic file (type png)
- <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 96.
+
+<use AAUgraphics/Logo.png>
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 137.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 96.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 137.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [9
 
 ]
 File: AAUgraphics/Logo.png Graphic file (type png)
- <use AAUgraphics/Logo.png>
-Package pdftex.def Info: AAUgraphics/Logo.png used on input line 101.
+
+<use AAUgraphics/Logo.png>
+Package pdftex.def Info: AAUgraphics/Logo.png used on input line 143.
 (pdftex.def)             Requested size: 21.68227pt x 31.22246pt.
 File: AAUgraphics/icon.png Graphic file (type png)
-
-<use AAUgraphics/icon.png>
-Package pdftex.def Info: AAUgraphics/icon.png used on input line 101.
+ <use AAUgraphics/icon.png>
+Package pdftex.def Info: AAUgraphics/icon.png used on input line 143.
 (pdftex.def)             Requested size: 44.55025pt x 44.54756pt.
  [10
 
@@ -1867,34 +1870,37 @@ Package pdftex.def Info: AAUgraphics/icon.png used on input line 101.
 \tf@snm=\write8
 \openout8 = `AAUsidebartheme.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
- (./AAUsidebartheme.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 149.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 149.
+
+(./AAUsidebartheme.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 149.
 Package rerunfilecheck Info: File `AAUsidebartheme.out' has not changed.
-(rerunfilecheck)             Checksum: 452A77282EA8406DC9BD11121755BCBA;482.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
+(rerunfilecheck)             Checksum: 7D44EC9D8CBA62F02D0D335BFB5E7FD4;473.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 149.
  ) 
 Here is how much of TeX's memory you used:
- 19954 strings out of 495059
- 365620 string characters out of 3182030
- 430907 words of memory out of 3000000
- 22599 multiletter control sequences out of 15000+200000
- 66093 words of font info for 96 fonts, out of 3000000 for 9000
+ 19968 strings out of 495059
+ 365672 string characters out of 3182030
+ 432922 words of memory out of 3000000
+ 22610 multiletter control sequences out of 15000+200000
+ 68983 words of font info for 98 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 52i,21n,63p,433b,1077s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 52i,21n,63p,433b,1073s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/kpfonts/jkpsya.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/
-uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on AAUsidebartheme.pdf (11 pages, 309898 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/kpfonts/jkpex.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/kpfonts/jkpmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpf
+onts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpfonts/jkpsya
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on AAUsidebartheme.pdf (11 pages, 337532 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
- 29 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 210 compressed objects within 3 object streams
+ 30 named destinations out of 1000 (max. 500000)
+ 117 words of extra memory for PDF output out of 10000 (max. 10000000)
 

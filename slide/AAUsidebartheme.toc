@@ -1,10 +1,10 @@
 \beamer@endinputifotherversion {3.10pt}
 \select@language {brazilian}
 \beamer@sectionintoc {1}{Medidas de Centralidade}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Centralidade}{4}{0}{1}
-\beamer@sectionintoc {2}{Centralidade do Grau}{5}{0}{2}
-\beamer@sectionintoc {3}{Centralidade de Intermedia\IeC {\c c}\IeC {\~a}o}{6}{0}{3}
-\beamer@sectionintoc {4}{Centralidade de Proximidade}{7}{0}{4}
-\beamer@sectionintoc {5}{Centralidade de Efici\IeC {\^e}ncia}{8}{0}{5}
-\beamer@sectionintoc {6}{Centralidade de Excentricidade}{9}{0}{6}
-\beamer@sectionintoc {7}{Conclus\IeC {\~a}o}{10}{0}{7}
+\beamer@sectionintoc {2}{Rede Sobrevivente}{4}{0}{2}
+\beamer@sectionintoc {3}{Centralidade do Grau}{5}{0}{3}
+\beamer@sectionintoc {4}{Centralidade de Intermedia\IeC {\c c}\IeC {\~a}o}{6}{0}{4}
+\beamer@sectionintoc {5}{Centralidade de Proximidade}{7}{0}{5}
+\beamer@sectionintoc {6}{Centralidade de Efici\IeC {\^e}ncia}{8}{0}{6}
+\beamer@sectionintoc {7}{Centralidade de Excentricidade}{9}{0}{7}
+\beamer@sectionintoc {8}{Conclus\IeC {\~a}o}{10}{0}{8}
