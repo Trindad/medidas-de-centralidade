@@ -1,5 +1,7 @@
 /**
  * Calcular distância geodésica para obter a centralidade de intermediação
+ * Como compilar : gcc  geodesica.c -o main -g -Wall
+ *                 ./main < Caminho/nome_arquivo > arquivo_saida
  */
 #include <string.h>
 #include <stdlib.h>
@@ -34,7 +36,7 @@
 // #define V 20
 // #define V 100
 // #define V 12
-#define V 12
+#define V 26
 #define LIMIT 2000
 
 typedef struct _caminho
@@ -565,6 +567,10 @@ void grauVertices(int **A,Vertice *vertices) {
   double media = sumGrau/V;
   printf("Grau médio : %f\n",media ); 
 }
+
+
+
+
 int main()
 {
   
@@ -594,8 +600,8 @@ int main()
   while (!feof(stdin)) {
 
     scanf("%d %d\n", &u, &v);
-    grafo[u][v] = 1;
-    grafo[v][u] = 1;
+    grafo[u-1][v-1] = 1;
+    grafo[v-1][u-1] = 1;
   }
 
 
@@ -680,3 +686,4 @@ int main()
 
   return 0;
 }
+
