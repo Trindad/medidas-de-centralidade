@@ -62,7 +62,7 @@ double sumGrau;
 
 
 void centralidadeProximidade();
-
+void centralidadeEficiencia();
 
 
 
@@ -682,9 +682,11 @@ int main()
   printf("\nCentralidade de Intermediação\n");
   centralidadeIntermediacao(vertices);
 
+  printf("\nCentralidade de Eficiência\n");
+  centralidadeEficiencia();
 
-  //Chamada para a funcao de centralidade de Proximidade.
-  void centralidadeProximidade();
+  printf("\nCentralidade de Proximidade\n");
+  centralidadeProximidade();
 
   
   for (i = 0 ; i < V ; i++) free(grafo[i]);
@@ -726,7 +728,7 @@ void centralidadeProximidade(){
       min = distancias[i];
     }
   }
-  printf("\nA Centralidade de Proximidade é: %d, e o(s) vertice(s) eh(sao):\n",min);
+  printf("\nA Centralidade de Proximidade da rede é: %d, e o(s) vértice(s) é(são):\n",min);
   for(i=0;i<V;i++){
     if(distancias[i] == min){
       printf("%d\n",i);
@@ -735,3 +737,37 @@ void centralidadeProximidade(){
 
 }
 
+void centralidadeEficiencia(){
+
+  int v, src;
+  int saltos[V];
+
+  for (v = 0; v < V; v++) {
+    int maiorMenor = 0;
+    for (src = 0; src < V; src++){
+      if(v != src){
+        if(caminhoMinimo[v][src] > maiorMenor){
+          saltos[v] = caminhoMinimo[v][src];
+        }
+      } 
+    }
+  }
+
+  int max=0, i;
+
+  for (i = 0; i < V; i++) {
+    if(saltos[i] > max){
+      max = saltos[i];
+    }
+  }
+ 
+  printf("\nCentralidade de Eficiencia da rede: %f \n\n Nó(s) central(is) pela medida de eficiencia :\n",((float)1/max));
+  
+  for (i = 0; i < V; i++){
+    if(saltos[i] == max){
+      printf("%d\n",saltos[i]);
+    }
+
+  }
+  
+}
