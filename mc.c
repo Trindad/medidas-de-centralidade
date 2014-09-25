@@ -36,7 +36,7 @@
 // #define V 20
 // #define V 100
 // #define V 12
-#define V 26
+#define V 9
 #define LIMIT 2000
 
 typedef struct _caminho
@@ -59,6 +59,12 @@ int verticesAdjacentes[V];
 int verticesAux[V];
 int **caminhoMinimo;
 double sumGrau;
+
+
+void centralidadeProximidade();
+
+
+
 
 /**
  * Distância minima 
@@ -675,6 +681,11 @@ int main()
   
   printf("\nCentralidade de Intermediação\n");
   centralidadeIntermediacao(vertices);
+
+
+  //Chamada para a funcao de centralidade de Proximidade.
+  void centralidadeProximidade();
+
   
   for (i = 0 ; i < V ; i++) free(grafo[i]);
   free(grafo);
@@ -684,6 +695,43 @@ int main()
 
   for (i = 0 ; i < V ; i++) free(vertices[i].caminhos);
 
+
+
+
+
   return 0;
+}
+
+
+
+void centralidadeProximidade(){
+  int distancias[V], i, j, min=999;
+  
+
+  for(i=0;i<V;i++){
+    //seta todos os caminhos para o "maior" valor possivel
+    distancias[i] = 999;
+    for(j=0;j<V;j++){
+      if(i==j) continue;
+
+      if(caminhoMinimo[i][j] < distancias[i]){
+        distancias[i] = caminhoMinimo[i][j];
+      }
+
+    }
+  }
+
+  for(i=0;i<V;i++){
+    if(distancias[i] < min){
+      min = distancias[i];
+    }
+  }
+  printf("\nA Centralidade de Proximidade é: %d, e o(s) vertice(s) eh(sao):\n",min);
+  for(i=0;i<V;i++){
+    if(distancias[i] == min){
+      printf("%d\n",i);
+    }
+  }
+
 }
 
