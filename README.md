@@ -1,6 +1,7 @@
 COMO SE COMPILA:
 
 1º passo:
+
 	gcc mc.c -o main -g 
 
 
