@@ -41,7 +41,7 @@
 
 typedef struct _caminho
 {
-  int vertices[V+1];
+  int vertices[V];
   int nVertices;
 
 } Caminho;
@@ -563,6 +563,7 @@ void grauVertices(int **A,Vertice *vertices) {
     {
       if (A[i][j] == 1)
       {
+        // printf("AQUI\n");
         grau++;
       } 
     }
@@ -584,21 +585,21 @@ int main()
 
   scanf("%d\n", &n);
 
-  int **grafo = (int**)calloc(n,sizeof(int*));;
+  int **grafo = (int**)malloc(sizeof(int*)*n);;
 
   if (grafo == NULL)
   {
     exit(1);
   }
-  for (i = 0; i < n; i++) {
+  for (i = 0; i < V; i++) {
 
-    grafo[i] = (int*) malloc (sizeof(int)*n);
+    grafo[i] = (int*) malloc (sizeof(int)*V);
 
     if (grafo[i] == NULL)
     {
       exit(1);
     }
-    for (j = 0; j < n; j++) {
+    for (j = 0; j < V; j++) {
       grafo[i][j] = 0;
     }
   }
@@ -697,40 +698,35 @@ int main()
 
   for (i = 0 ; i < V ; i++) free(vertices[i].caminhos);
 
-
-
-
-
   return 0;
 }
 
 
 
 void centralidadeProximidade(){
-  int distancias[V], i, j, min=999;
+  int distancias[V], i, j, min= 0, max=9999;
   
 
   for(i=0;i<V;i++){
     //seta todos os caminhos para o "maior" valor possivel
-    distancias[i] = 999;
+    distancias[i] = 0;
     for(j=0;j<V;j++){
       if(i==j) continue;
 
-      if(caminhoMinimo[i][j] < distancias[i]){
+      if(caminhoMinimo[i][j] > distancias[i]){
         distancias[i] = caminhoMinimo[i][j];
       }
-
     }
   }
 
   for(i=0;i<V;i++){
-    if(distancias[i] < min){
-      min = distancias[i];
+    if(distancias[i] < max){
+      max = distancias[i];
     }
   }
   printf("\nA Centralidade de Proximidade da rede é: %d, e o(s) vértice(s) é(são):\n",min);
   for(i=0;i<V;i++){
-    if(distancias[i] == min){
+    if(distancias[i] == max){
       printf("%d\n",i);
     }
   }
