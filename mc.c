@@ -630,7 +630,7 @@ int main()
 
   grauVertices(grafo,vertices);
 
-  caminhoMinimo = (int**) malloc (sizeof(int)*V);
+  caminhoMinimo = (int**) malloc (sizeof(int*)*V);
 
   if (caminhoMinimo == NULL)
   {
