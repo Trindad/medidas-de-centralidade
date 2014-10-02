@@ -36,7 +36,7 @@
 // #define V 20
 // #define V 100
 // #define V 12
-#define V 9
+#define V 5
 #define LIMIT 2000
 
 typedef struct _caminho
@@ -681,10 +681,10 @@ int main()
   
   
   printf("\nCentralidade de Intermediação\n");
-  centralidadeIntermediacao(vertices);
+  //centralidadeIntermediacao(vertices);
 
   printf("\nCentralidade de Eficiência\n");
-  centralidadeEficiencia();
+  //centralidadeEficiencia();
 
   printf("\nCentralidade de Proximidade\n");
   centralidadeProximidade();
@@ -704,8 +704,14 @@ int main()
 
 
 void centralidadeProximidade(){
-  int distancias[V], i, j, min= 0, max=9999;
+  int distancias[V], i, j, min= 999;
   
+  for(i=0;i<V;i++){
+    for(j=0;j<V;j++){
+      printf("%d ", caminhoMinimo[i][j]);
+    }
+    printf("\n");
+  }
 
   for(i=0;i<V;i++){
     //seta todos os caminhos para o "maior" valor possivel
@@ -715,18 +721,19 @@ void centralidadeProximidade(){
 
       if(caminhoMinimo[i][j] > distancias[i]){
         distancias[i] = caminhoMinimo[i][j];
+        printf("Dist: %d, i: %d\n",distancias[i], i);
       }
     }
   }
-
+printf("min: %d",min); 
   for(i=0;i<V;i++){
-    if(distancias[i] < max){
-      max = distancias[i];
+    if(distancias[i] < min){
+      min = distancias[i];
     }
   }
   printf("\nA Centralidade de Proximidade da rede é: %d, e o(s) vértice(s) é(são):\n",min);
   for(i=0;i<V;i++){
-    if(distancias[i] == max){
+    if(distancias[i] == min){
       printf("%d\n",i);
     }
   }
