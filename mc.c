@@ -681,10 +681,10 @@ int main()
   
   
   printf("\nCentralidade de Intermediação\n");
-  //centralidadeIntermediacao(vertices);
+  // centralidadeIntermediacao(vertices);
 
   printf("\nCentralidade de Eficiência\n");
-  //centralidadeEficiencia();
+  centralidadeEficiencia();
 
   printf("\nCentralidade de Proximidade\n");
   centralidadeProximidade();
@@ -751,6 +751,7 @@ void centralidadeEficiencia(){
       if(v != src){
         if(caminhoMinimo[v][src] > maiorMenor){
           saltos[v] = caminhoMinimo[v][src];
+          maiorMenor = saltos[v];
         }
       } 
     }
@@ -768,7 +769,7 @@ void centralidadeEficiencia(){
   
   for (i = 0; i < V; i++){
     if(saltos[i] == max){
-      printf("%d\n",saltos[i]);
+      printf("%d\n",saltos[i]+1);
     }
 
   }
