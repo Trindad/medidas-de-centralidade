@@ -704,8 +704,9 @@ int main()
 
 
 void centralidadeProximidade(){
-  int distancias[V], i, j, min= 999;
-  
+  int distancias[V], i, j;
+  double medida[V], min=0.0;
+
   for(i=0;i<V;i++){
     for(j=0;j<V;j++){
       printf("%d ", caminhoMinimo[i][j]);
@@ -717,23 +718,22 @@ void centralidadeProximidade(){
     //seta todos os caminhos para o "maior" valor possivel
     distancias[i] = 0;
     for(j=0;j<V;j++){
-      if(i==j) continue;
+      distancias[i] += caminhoMinimo[i][j];
+      printf("Dist: %d, i: %d\n",distancias[i], i);
+    }
+    medida[i] = 1.0/distancias[i];
+    printf("medida: %lf.\n",medida[i]);
+  }
+ 
+  for(i=0;i<V;i++){
+    if(min < medida[i]){
+      min = medida[i];
+    }
+  }
 
-      if(caminhoMinimo[i][j] > distancias[i]){
-        distancias[i] = caminhoMinimo[i][j];
-        printf("Dist: %d, i: %d\n",distancias[i], i);
-      }
-    }
-  }
-printf("min: %d",min); 
+  printf("\nA Centralidade de Proximidade da rede é: %lf, e o(s) vértice(s) é(são):\n",min);
   for(i=0;i<V;i++){
-    if(distancias[i] < min){
-      min = distancias[i];
-    }
-  }
-  printf("\nA Centralidade de Proximidade da rede é: %d, e o(s) vértice(s) é(são):\n",min);
-  for(i=0;i<V;i++){
-    if(distancias[i] == min){
+    if(medida[i] == min){
       printf("%d\n",i);
     }
   }
