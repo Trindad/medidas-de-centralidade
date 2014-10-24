@@ -36,7 +36,7 @@
 // #define V 20
 // #define V 100
 // #define V 12
-#define V 5
+#define V 9
 #define LIMIT 2000
 
 typedef struct _caminho
@@ -575,7 +575,27 @@ void grauVertices(int **A,Vertice *vertices) {
   printf("Grau médio : %f\n",media ); 
 }
 
-
+void grauCentralidade(int **A,Vertice *vertices)
+{
+  int graumax = 0;
+  int i;
+  float mediarelativa;
+  for (i = 0; i < V; i ++)
+  {
+    if (graumax < vertices[i].grau) 
+    {
+      graumax = vertices[i].grau;
+    }
+  }
+  for (i = 0; i < V; i ++)
+  {
+    if (vertices[i].grau == graumax)
+    {
+      mediarelativa = (float) graumax / (V - 1);
+      printf("O nó %d é um dos centrais com grau %d, e com centralidade relativa de %f\n", i, graumax,mediarelativa);
+    }
+  }
+}
 
 
 int main()
@@ -629,6 +649,8 @@ int main()
   }
 
   grauVertices(grafo,vertices);
+
+  grauCentralidade(grafo, vertices);
 
   caminhoMinimo = (int**) malloc (sizeof(int*)*V);
 
