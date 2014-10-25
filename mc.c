@@ -36,12 +36,14 @@
 // #define V 20
 // #define V 100
 // #define V 12
-#define V 9
+
 #define LIMIT 2000
+#define MAX 100
+
 
 typedef struct _caminho
 {
-  int vertices[V];
+  int vertices[MAX];
   int nVertices;
 
 } Caminho;
@@ -55,8 +57,9 @@ typedef struct _vertice
 
 } Vertice;
 
-int verticesAdjacentes[V];
-int verticesAux[V];
+int V;
+int verticesAdjacentes[MAX];
+int verticesAux[MAX];
 int **caminhoMinimo;
 double sumGrau;
 
@@ -501,7 +504,7 @@ double calculaGeodesica(Vertice vertices[],int vertice) {
       }
     }
   }
-  printf("cb = %f\n",cb );
+   // printf("cb = %f\n",cb );
   return cb;
 }
 
@@ -528,10 +531,10 @@ void centralidadeIntermediacao(Vertice vertices[]) {
     }
   }
   double aux = 0.0;
-  printf("centralidade  de intermediação indica o vertice v%d\n",verticeCentral );
+  printf("centralidade  de intermediação indica o vertice v[%d]\n",verticeCentral );
   printf("%f %d\n",cb,verticeCentral );
   aux = some/V;
-  printf("Media da centralidade de intermediação %f\n", aux);
+  printf("Média da centralidade de intermediação é %f\n", aux);
 
   double ponderada = 0;
 
@@ -539,7 +542,7 @@ void centralidadeIntermediacao(Vertice vertices[]) {
   ponderada = (temporario)/sumGrau;
 
 
-  printf("Media da centralidade de intermediação ponderada = %f\n",ponderada);
+  printf("Média da centralidade de intermediação ponderada é %f\n",ponderada);
   double aux1 = ((V*V)-3*V+2)/2;
   printf("%f < %f\n",aux,aux1 );
   return;
@@ -569,7 +572,7 @@ void grauVertices(int **A,Vertice *vertices) {
     }
     vertices[i].grau = grau;
     sumGrau = sumGrau + grau;
-    printf("grau(%d) = %d\n",i,grau );
+    // printf("grau(%d) = %d\n",i,grau );
   }
   double media = sumGrau/V;
   printf("Grau médio : %f\n",media ); 
@@ -601,11 +604,11 @@ void grauCentralidade(int **A,Vertice *vertices)
 int main()
 {
   
-  int n = 0, u = 0, v = 0,k = 0,i = 0, j = 0;
+  int u = 0, v = 0,i = 0, j = 0;
 
-  scanf("%d\n", &n);
+  scanf("%d\n", &V);
 
-  int **grafo = (int**)malloc(sizeof(int*)*n);;
+  int **grafo = (int**)malloc(sizeof(int*)*V);;
 
   if (grafo == NULL)
   {
@@ -647,11 +650,12 @@ int main()
     }
     vertices[i].grau = 0;
   }
-
+ 
   grauVertices(grafo,vertices);
 
+  printf("---------------------------------------------------------------------\n");
   grauCentralidade(grafo, vertices);
-
+  printf("---------------------------------------------------------------------\n");
   caminhoMinimo = (int**) malloc (sizeof(int*)*V);
 
   if (caminhoMinimo == NULL)
@@ -687,30 +691,30 @@ int main()
     algoritmoDijkstra(grafo,i,vertices);
   }
 
-  for ( k = 0; k < V; k++)
-  {
-    printf("Vertice de origem %d nCaminhos %d\n",k,vertices[k].nCaminhos );
-    for (i = 0; i < vertices[k].nCaminhos; i++)
-    {
-      for (j = 0; j < vertices[k].caminhos[i].nVertices; j++)
-      {
-        printf(" %d ",vertices[k].caminhos[i].vertices[j]);
-      }
-      printf("\n");
-    }
+  // for ( k = 0; k < V; k++)
+  // {
+  //   printf("Vertice de origem %d nCaminhos %d\n",k,vertices[k].nCaminhos );
+  //   for (i = 0; i < vertices[k].nCaminhos; i++)
+  //   {
+  //     for (j = 0; j < vertices[k].caminhos[i].nVertices; j++)
+  //     {
+  //       printf(" %d ",vertices[k].caminhos[i].vertices[j]);
+  //     }
+  //     printf("\n");
+  //   }
 
-  }
+  // }
   
   
   printf("\nCentralidade de Intermediação\n");
-  // centralidadeIntermediacao(vertices);
-
+  centralidadeIntermediacao(vertices);
+   printf("---------------------------------------------------------------------\n");
   printf("\nCentralidade de Eficiência\n");
   centralidadeEficiencia();
-
+   printf("---------------------------------------------------------------------\n");
   printf("\nCentralidade de Proximidade\n");
   centralidadeProximidade();
-
+   printf("---------------------------------------------------------------------\n");
   
   for (i = 0 ; i < V ; i++) free(grafo[i]);
   free(grafo);
@@ -726,25 +730,27 @@ int main()
 
 
 void centralidadeProximidade(){
+
   int distancias[V], i, j;
   double medida[V], min=0.0;
 
-  for(i=0;i<V;i++){
-    for(j=0;j<V;j++){
-      printf("%d ", caminhoMinimo[i][j]);
-    }
-    printf("\n");
-  }
+  // for(i=0;i<V;i++){
+
+  //   for(j=0;j<V;j++){
+  //     printf("%d ", caminhoMinimo[i][j]);
+  //   }
+  //   printf("\n");
+  // }
 
   for(i=0;i<V;i++){
     //seta todos os caminhos para o "maior" valor possivel
     distancias[i] = 0;
     for(j=0;j<V;j++){
       distancias[i] += caminhoMinimo[i][j];
-      printf("Dist: %d, i: %d\n",distancias[i], i);
+      // printf("Dist: %d, i: %d\n",distancias[i], i);
     }
     medida[i] = 1.0/distancias[i];
-    printf("medida: %lf.\n",medida[i]);
+    // printf("medida: %lf.\n",medida[i]);
   }
  
   for(i=0;i<V;i++){
@@ -787,7 +793,7 @@ void centralidadeEficiencia(){
     }
   }
  
-  printf("\nCentralidade de Eficiencia da rede: %f \n\n Nó(s) central(is) pela medida de eficiencia :\n",((float)1/max));
+  printf("\nCentralidade de Eficiência da rede: %f \n\n Nó(s) central(is) pela medida de eficiência :\n",((float)1/max));
   
   for (i = 0; i < V; i++){
     if(saltos[i] == max){
