@@ -1,0 +1,34 @@
+Grau médio : 2.242424
+---------------------------------------------------------------------
+O nó 12 é um dos centrais com grau 6, e com centralidade relativa de 0.187500
+O nó 28 é um dos centrais com grau 6, e com centralidade relativa de 0.187500
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[28]
+247.666667 28
+Média da centralidade de intermediação é 71.424242
+Média da centralidade de intermediação ponderada é 90.477477
+71.424242 < 496.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.083333 
+
+ Nó(s) central(is) pela medida de eficiência :
+13
+13
+13
+13
+13
+13
+13
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.007874, e o(s) vértice(s) é(são):
+12
+28
+---------------------------------------------------------------------

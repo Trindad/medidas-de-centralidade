@@ -1,0 +1,39 @@
+Grau médio : 3.103448
+---------------------------------------------------------------------
+O nó 5 é um dos centrais com grau 8, e com centralidade relativa de 0.285714
+O nó 13 é um dos centrais com grau 8, e com centralidade relativa de 0.285714
+O nó 19 é um dos centrais com grau 8, e com centralidade relativa de 0.285714
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[13]
+166.433333 13
+Média da centralidade de intermediação é 25.965517
+Média da centralidade de intermediação ponderada é 57.210370
+25.965517 < 378.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.200000 
+
+ Nó(s) central(is) pela medida de eficiência :
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+6
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.018868, e o(s) vértice(s) é(são):
+13
+---------------------------------------------------------------------

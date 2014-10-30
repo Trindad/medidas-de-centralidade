@@ -1,14 +1,15 @@
-Grau médio : 2.666667
+Grau médio : 3.375000
 ---------------------------------------------------------------------
-O nó 2 é um dos centrais com grau 5, e com centralidade relativa de 0.625000
+O nó 1 é um dos centrais com grau 6, e com centralidade relativa de 0.400000
+O nó 9 é um dos centrais com grau 6, e com centralidade relativa de 0.400000
 ---------------------------------------------------------------------
 
 Centralidade de Intermediação
-centralidade  de intermediação indica o vertice v[2]
-13.000000 2
-Média da centralidade de intermediação é 3.888889
-Média da centralidade de intermediação ponderada é 5.520833
-3.888889 < 28.000000
+centralidade  de intermediação indica o vertice v[9]
+43.466667 9
+Média da centralidade de intermediação é 10.187500
+Média da centralidade de intermediação ponderada é 15.129630
+10.187500 < 105.000000
 ---------------------------------------------------------------------
 
 Centralidade de Eficiência
@@ -19,11 +20,16 @@ Centralidade de Eficiência da rede: 0.250000
 5
 5
 5
+5
+5
+5
+5
+5
+5
 ---------------------------------------------------------------------
 
 Centralidade de Proximidade
 
-A Centralidade de Proximidade da rede é: 0.083333, e o(s) vértice(s) é(são):
-0
-2
+A Centralidade de Proximidade da rede é: 0.041667, e o(s) vértice(s) é(são):
+9
 ---------------------------------------------------------------------
