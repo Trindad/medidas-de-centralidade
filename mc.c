@@ -7,35 +7,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <limits.h>
- 
-//numero de vértices do grafo
-// #define V 37
-// #define V 24
-// #define V 19
-// #define V 16
-// #define V 32
-// #define V 17
-// #define V 15
-// #define V 31
-// #define V 56
-// #define V 14
-// #define V 33
-// #define V 19
-// #define V 33
-// #define V 15
-// #define V 26
-// #define V 19
-// #define V 14
-// #define V 38
-// #define V 21
-// #define V 26
-// #define V 17
-// #define V 27
-// #define V 10
-// #define V 25
-// #define V 20
-// #define V 100
-// #define V 12
 
 #define LIMIT 2000
 #define MAX 100
@@ -57,10 +28,10 @@ typedef struct _vertice
 
 } Vertice;
 
-int V;
+int V;//número de vértices no grafo
 int verticesAdjacentes[MAX];
 int verticesAux[MAX];
-int **caminhoMinimo;
+int **caminhoMinimo;//armazena caminhos minimos de uma origem i à um destino j
 double sumGrau;
 
 
@@ -156,7 +127,7 @@ void adicionaVertice(Vertice vertices[],int **caminho,int numVertices,int nCamin
 
         auxiliar = vertices[origem].caminhos[posicao-1].nVertices++;
         int temp = caminho[i][numVertices-j]+0;
-        // printf("posicao %d\n",posicao );
+
         vertices[origem].caminhos[posicao-1].vertices[auxiliar] = temp;
       } 
     }
@@ -171,7 +142,6 @@ void adicionaVertice(Vertice vertices[],int **caminho,int numVertices,int nCamin
  */
 int adicionaCaminhos(Vertice vertices[V],int **caminho,int adjacente,int origem,int destino) {
 
-  // printf("origem %d destino %d\n",origem,destino );
   int temp,i = 0,j = 0,k = vertices[origem].nCaminhos,n = 0,verticesCaminho = 0,minimo = 0 ;
 
   for(temp = 1; temp  < vertices[origem].nCaminhos; temp++)
@@ -186,8 +156,6 @@ int adicionaCaminhos(Vertice vertices[V],int **caminho,int adjacente,int origem,
         
         verticesCaminho = vertices[origem].caminhos[k-temp].nVertices;
         minimo = caminhoMinimo[origem][destino];
-
-        // printf("nVertices %d minimo %d k-temp %d\n",verticesCaminho,minimo-1,k-temp);
 
         if (verticesCaminho < minimo-1)
         {
@@ -211,7 +179,7 @@ int adicionaCaminhos(Vertice vertices[V],int **caminho,int adjacente,int origem,
       break;
     }
   }
-  // printf("\n");
+
   return i;
 }
 void inserirCaminhos(Vertice vertices[],int origem,int destino,int adjacente) {
@@ -496,7 +464,6 @@ double calculaGeodesica(Vertice vertices[],int vertice) {
 
         double nVertice = buscaVertice(caminhos,vertice,nCaminhos);
 
-        // printf("u %d v %d nCaminho %f nVertice %f\n",i,j,nCaminhos,nVertice );
         cb = cb+(nVertice/nCaminhos);
         
         for (k = 0 ; k < V ; k++) free(caminhos[k]);
@@ -566,13 +533,11 @@ void grauVertices(int **A,Vertice *vertices) {
     {
       if (A[i][j] == 1)
       {
-        // printf("AQUI\n");
         grau++;
       } 
     }
     vertices[i].grau = grau;
     sumGrau = sumGrau + grau;
-    // printf("grau(%d) = %d\n",i,grau );
   }
   double media = sumGrau/V;
   printf("Grau médio : %f\n",media ); 
@@ -687,8 +652,7 @@ int main()
 
   for (i = 0; i < V; i++)
   {
-    // printf("\n\nVertice %d\n",i );
-    algoritmoDijkstra(grafo,i,vertices);
+    algoritmoDijkstra(grafo,i,vertices);//encontra caminhos mínimos de i até V-1 vértices
   }
 
   // for ( k = 0; k < V; k++)
