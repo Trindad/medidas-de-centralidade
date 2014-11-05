@@ -9,7 +9,7 @@
 #include <limits.h>
 
 #define LIMIT 2000
-#define MAX 100
+#define MAX 9
 
 
 typedef struct _caminho
@@ -735,33 +735,35 @@ void centralidadeProximidade(){
 void centralidadeEficiencia(){
 
   int v, src;
-  int saltos[V];
+  float saltos[V];
 
   for (v = 0; v < V; v++) {
-    int maiorMenor = 0;
+    float maiorCaminho = 0;
     for (src = 0; src < V; src++){
       if(v != src){
-        if(caminhoMinimo[v][src] > maiorMenor){
-          saltos[v] = caminhoMinimo[v][src];
-          maiorMenor = saltos[v];
+        if(caminhoMinimo[v][src] > maiorCaminho){
+          saltos[v] =(float)caminhoMinimo[v][src];
+          maiorCaminho = saltos[v];
         }
       } 
     }
   }
 
-  int max=0, i;
+  float max=0;
+  int i;
 
   for (i = 0; i < V; i++) {
+	saltos[i] = 1/saltos[i];
     if(saltos[i] > max){
       max = saltos[i];
     }
   }
  
-  printf("\nCentralidade de Eficiência da rede: %f \n\n Nó(s) central(is) pela medida de eficiência :\n",((float)1/max));
+  printf("\nCentralidade de Eficiência da rede: %f \n\n Nó(s) central(is) pela medida de eficiência :\n",max);
   
   for (i = 0; i < V; i++){
     if(saltos[i] == max){
-      printf("%d\n",saltos[i]+1);
+      printf("%d\n",i+1);
     }
 
   }
