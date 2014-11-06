@@ -1,0 +1,29 @@
+Grau médio : 2.526316
+---------------------------------------------------------------------
+O nó 4 é um dos centrais com grau 4, e com centralidade relativa de 0.222222
+O nó 9 é um dos centrais com grau 4, e com centralidade relativa de 0.222222
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[4]
+67.833333 4
+Média da centralidade de intermediação é 20.421053
+Média da centralidade de intermediação ponderada é 24.118056
+20.421053 < 153.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.250000 
+
+ Nó(s) central(is) pela medida de eficiência :
+17
+18
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.021739, e o(s) vértice(s) é(são):
+16
+17
+---------------------------------------------------------------------

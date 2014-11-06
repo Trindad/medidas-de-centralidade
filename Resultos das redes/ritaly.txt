@@ -1,0 +1,30 @@
+Grau médio : 4.142857
+---------------------------------------------------------------------
+O nó 11 é um dos centrais com grau 9, e com centralidade relativa de 0.692308
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[11]
+34.983333 11
+Média da centralidade de intermediação é 5.642857
+Média da centralidade de intermediação ponderada é 10.299425
+5.642857 < 78.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.500000 
+
+ Nó(s) central(is) pela medida de eficiência :
+2
+5
+6
+9
+12
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.058824, e o(s) vértice(s) é(são):
+11
+---------------------------------------------------------------------

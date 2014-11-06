@@ -1,0 +1,28 @@
+Grau médio : 3.125000
+---------------------------------------------------------------------
+O nó 12 é um dos centrais com grau 8, e com centralidade relativa de 0.258065
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[12]
+207.207143 12
+Média da centralidade de intermediação é 35.906250
+Média da centralidade de intermediação ponderada é 56.097849
+35.906250 < 465.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.250000 
+
+ Nó(s) central(is) pela medida de eficiência :
+13
+26
+27
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.014706, e o(s) vértice(s) é(são):
+12
+---------------------------------------------------------------------

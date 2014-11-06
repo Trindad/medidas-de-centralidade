@@ -1,0 +1,32 @@
+Grau médio : 3.032258
+---------------------------------------------------------------------
+O nó 6 é um dos centrais com grau 5, e com centralidade relativa de 0.166667
+O nó 27 é um dos centrais com grau 5, e com centralidade relativa de 0.166667
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[20]
+143.911111 20
+Média da centralidade de intermediação é 47.612903
+Média da centralidade de intermediação ponderada é 55.390248
+47.612903 < 435.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.166667 
+
+ Nó(s) central(is) pela medida de eficiência :
+6
+7
+18
+19
+20
+21
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.010870, e o(s) vértice(s) é(são):
+17
+---------------------------------------------------------------------
