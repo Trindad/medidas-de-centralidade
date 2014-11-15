@@ -1,0 +1,27 @@
+Grau médio : 4.352941
+---------------------------------------------------------------------
+O nó 15 é um dos centrais com grau 7, e com centralidade relativa de 0.437500
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[15]
+27.750000 15
+Média da centralidade de intermediação é 7.705882
+Média da centralidade de intermediação ponderada é 9.467342
+7.705882 < 120.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.500000 
+
+ Nó(s) central(is) pela medida de eficiência :
+1
+16
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.040000, e o(s) vértice(s) é(são):
+15
+---------------------------------------------------------------------

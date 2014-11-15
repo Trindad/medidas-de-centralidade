@@ -1,0 +1,47 @@
+Grau médio : 4.800000
+---------------------------------------------------------------------
+O nó 16 é um dos centrais com grau 7, e com centralidade relativa de 0.368421
+---------------------------------------------------------------------
+
+Centralidade de Intermediação
+centralidade  de intermediação indica o vertice v[4]
+16.035714 4
+Média da centralidade de intermediação é 8.850000
+Média da centralidade de intermediação ponderada é 9.892063
+8.850000 < 171.000000
+---------------------------------------------------------------------
+
+Centralidade de Eficiência
+
+Centralidade de Eficiência da rede: 0.333333 
+
+ Nó(s) central(is) pela medida de eficiência :
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+---------------------------------------------------------------------
+
+Centralidade de Proximidade
+
+A Centralidade de Proximidade da rede é: 0.030303, e o(s) vértice(s) é(são):
+5
+14
+15
+---------------------------------------------------------------------
