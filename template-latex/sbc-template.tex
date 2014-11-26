@@ -1,12 +1,38 @@
 \documentclass[12pt]{article}
-\usepackage[brazil]{babel}
-\usepackage[utf8]{inputenc}
+
 \usepackage{sbc-template}
+\usepackage{array}
+\usepackage{graphicx,url}
+\usepackage[tight,footnotesize]{subfigure}
+
+%encoding
+%--------------------------------------
+%\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%--------------------------------------
+ 
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%--------------------------------------
+
+
+%\usepackage[brazil]{babel}   
+%\usepackage[latin1]{inputenc}  
+\usepackage[export]{adjustbox}
+%fontes personalizadas
 \usepackage{enumerate}
-\usepackage{amsthm}
-\usepackage{amssymb}
 \usepackage{bm}
-\usepackage{color}
+%bibliotecas matem\'{a}ticas
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage{pst-func}
+\usepackage{pst-math}
+
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.95}
 \usepackage{kpfonts}
 \usepackage[T1]{fontenc}
 
@@ -26,15 +52,15 @@
 
 \usepackage{hyperref}
 \hypersetup{
-    unicode=false,          % non-Latin characters in Acrobatís bookmarks
-    pdftoolbar=true,        % show Acrobatís toolbar?
-    pdfmenubar=true,        % show Acrobat's menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window    
-    colorlinks=true,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links
-    citecolor=blue,         % color of links to bibliography    
-    urlcolor=blue,         % color of external links
+    unicode=false,          
+    pdftoolbar=true,        
+    pdfmenubar=true,       
+    pdffitwindow=false,    
+    pdfstartview={FitH},    
+    colorlinks=true,       
+    linkcolor=red,          
+    citecolor=blue,         
+    urlcolor=blue,        
     breaklinks=true
 }
 
@@ -42,7 +68,7 @@
      
 \sloppy
 
-\title{Medidas de Centralidade em Redes Ópticas de Telecomunicações}
+\title{Análise de Medidas de Centralidade Aplicadas as Redes Ópticas de Telecomunicações}
 
 \author{Silvana Trindade\inst{1}, Guilherme Bizzani\inst{1}, Rodrigo Levinsk\inst{1}, Watson Vieira Costa Junior\inst{1}}
 
@@ -76,13 +102,11 @@
 %apresentar as redes reais utilizadas
 
 \begin{table}[htp]
-\caption{REDES REAIS DE REFERÊNCIA}\label{tab:tab1}
+\caption{CONJUNTO DE REDES REAIS DE REFERÊNCIA}\label{tab:tab1}
 \centering
-\begin{tabular}{l*{4}{l}r}
+\begin{tabular}{l*{9}{l}r}
 \hline
 Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $BC$ & $Centralidade Relativa$ & $Centralidade de Eficiência$ & $Centralidade de Proximidade$ & $Centralidade de Grau$\\ 
-\rowcolor{Gray} 
-\hline
 1 & Coronet & 75 & 97 & 2.59& 1034.95& 0.33& 0.07 & 0.11\\ 
 2 &  Abilinecore &  10 &  13& 2.60& 12.58 & 0.3 & 0.33\\
 3 &  BREN &  10 &  11& 2.20& 11.5 & 0.33 & 0.33\\
@@ -95,10 +119,10 @@ Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $BC$ & $Cen
 10 &  Sweden &  20 &  24& 2.40& 53.00& 0.21 & 0.20\\
 11 &  LONI &  33 &  37& 2.24& 247.67&  0.19 & 0.11\\
 12 &  INTERNET2 &  56&  61& 2.18& 631.42&  0.05 & 0.11\\
-13 &  USA100 &  100 &  171& 3.42& 1720.56&  0.06 & 0.11\\
-\hline
+13 &  USA100 &  100 &  171& 3.42& 1720.56&  0.06 & 0.11
 \end{tabular}
 \end{table}
+
 \section{Metodologia}
 %como foi feito
 %descrever etapas
