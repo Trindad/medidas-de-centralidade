@@ -50,24 +50,6 @@
      
 \sloppy
 
-\usepackage{hyperref}
-\hypersetup{
-    unicode=false,          
-    pdftoolbar=true,        
-    pdfmenubar=true,       
-    pdffitwindow=false,    
-    pdfstartview={FitH},    
-    colorlinks=true,       
-    linkcolor=red,          
-    citecolor=blue,         
-    urlcolor=blue,        
-    breaklinks=true
-}
-
-
-     
-\sloppy
-
 \title{Análise de Medidas de Centralidade Aplicadas as Redes Ópticas de Telecomunicações}
 
 \author{Silvana Trindade\inst{1}, Guilherme Bizzani\inst{1}, Rodrigo Levinsk\inst{1}, Watson V. C. Junior\inst{1}}
@@ -91,27 +73,51 @@
 %resultados
 %conclusão
 \begin{resumo} 
- A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis, como por exemplo o número de nós e ligações.
- Este artigo propõe o estudo de cinco medidas de centralidade: a centralidade de grau, de intermediação, de eficiência e proximidade.
+ A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis para cinco medidas de centralidade, a centralidade de grau, de intermediação, de eficiência e proximidade.
+
 \end{resumo}
 
 
 \section{Introdução}
+%contextualização
+%gap
+%metodo proposto
 
-\section{Medidas de Centralidade}
+O presente artigo esta organizado da seguinte forma: na Seção \ref{sec:mc} é apresentado o conceito de medidas de centralidade bem como as que foram utilizadas.
+Posteriomente na  Seção \ref{sec:met} será abordado o método utilizado. 
+Na Seção \ref{sec:result} é apresentado os resultados.
+E finalmente na Seção \ref{sec:conc} as conclusões e trabalhos futuros serão expostos. 
 
-%apresentar as redes reais utilizadas
+\section{Medidas de Centralidade}\label{sec:mc}
+
+O estudo de redes é de grande interesse na área científica, dada a capacidade de uma dada rede poder representar por meio de modelagem diversos problemas de natureza real.
+Em grafos como modelos para redes, as medidas de centralidade buscam medir a variação da relevância dos vértices, em função de alguns invariantes do grafo \cite{freitas}.
+
+Em \cite{freitas} intuitivamente, em uma rede, os nós mais centrais são aqueles que a partir dos quais podemos atingir qualquer outro com mais facilidade ou rapidez.
+Este trabalho é direcionado a medidas de centralidade para redes de telecomunicações.
+Cada medida influenciada por $n$ variáveis, grau, número de ligações, número de nós, dentre outras.
 
 \subsection{Centralidade de Eficiência}
 %conceituar medidas
 \subsection{Centralidade de Grau}
 %conceituar medidas
 \subsection{Centralidade de Intermediação}
-%conceituar medidas
+\cite{freitas} cita que a centralidade de intermedição foi introduzida com o objetivo de expessar a influência que um vértice sobre seus pares em um grafo.
+A medida consiste em obter o número de geodésicas entre todos os pares de vértices do grafo a partir de um determinado vértice \cite{freitas}.
+
+Portanto para calcular a centralidade de intermediação utiliza-se a seguinte fórmula: 
+\begin{center}
+\begin{equation}
+C_I(v_k)=\sum_{i\neq j \neq v_{k}} \frac{b_{ij}(v_k)}{b_{ij}},
+\end{equation}
+\end{center}
+onde $b_{ij}$ representa o número total de geodésicas entre os vértices $i$ e $j$ e  $b_{ij}(v_k)$ representa o número de geodésicas entre $i$ e $j$ que possuem ao longo do caminho o vértice $(v_k)$.
+Sendo o nó com maior centralidade de intermediação será o mais central da rede \cite{ufimtsev} \cite{freeman}.
+
 \subsection{Centralidade de Proximidade}
 %conceituar medidas
 
-\section{Metodologia}
+\section{Metodologia}\label{sec:met}
 %como foi feito
 %descrever etapas
 \begin{table}[htp]
@@ -119,25 +125,25 @@
 \centering
 \begin{tabular}{l*{9}{l}r}
 \hline\rowcolor{Gray}
-Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_B$ & $C_R$ & $C_E$ & $C_P$ & $C_G$\\ 
+Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_G$ & $C_R$ & $C_E$ & $C_P$ & $C_I$\\ 
 \hline
-1 & Coronet & 75 & 97 & 2.59& 1034.95& 0.33& 0.07 & 0.11\\ 
-2 &  Abilinecore &  10 &  13& 2.60& 12.58 & 0.30 & 0.33\\
-3 &  BREN &  10 &  11& 2.20& 11.5 & 0.33 & 0.33\\
-4 &  Learn &  10 &  11& 2.20& 11.5& 0.33 & 0.33\\
-5 &  RNP &  10 &  12& 2.40& 10.50&  0.33 & 0.33\\
-6 &  Metrona &  33 &  41& 2.48& 239.50&  0.16 & 0.17\\
-7 &  ARNES &  17 &  20& 2.35& 74.83&  0.31 & 0.33\\
-8 &  Germany &  17 &  26& 3.06& 47.93& 0.37 & 0.33\\
-9 &  ARPANET &  20 &  32& 3.20& 35.40&  0.21 & 0.33\\
-10 &  Sweden &  20 &  24& 2.40& 53.00& 0.21 & 0.20\\
-11 &  LONI &  33 &  37& 2.24& 247.67&  0.19 & 0.11\\
-12 &  INTERNET2 &  56&  61& 2.18& 631.42&  0.05 & 0.11\\
-13 &  USA100 &  100 &  171& 3.42& 1720.56&  0.06 & 0.11
+1   &Abilenecore &10    &13     &2,6    &3   &0,33    &0,33     &0,0625     & 12,58\\
+2   &RNP        &10     &12     & 2,4   &3   &0,33    &0,33     &0,0588     &10,5\\
+3   &Learn      &10     & 11    &2,2    &3   &0,33    &0,33     &0,0555     &11,5\\
+4   &Bren       &10     & 11    &2,2    &3   &0,33    &0,33     &0,0555     &11,5\\
+5   &Germany    &17     & 26    &3,06   &6   &0,37    &0,33     &0,0333     &47,93\\
+6   &Arnes      &17     & 20    &2,35   &5   &0,31    &0,33     &0,0312     &74,83\\
+7   &Arpanet    &20     & 32    &3,2    &4   & 0,21   &0,33     & 0,0232    &35,4\\
+8   &Sweden     &20     & 24    &2,4    &4   & 0,21   &0,2&     0,0161      &53\\
+9   &Metrona    &33     & 41    &2,48   &5   & 0,16   &0,17     & 0,0094    &239,5\\
+10  &Loni       &33     & 37    &2,24   & 6  & 0,19   &0,11     & 0,0078    &247,67\\
+11  &Internet2  &56     & 61    &2,18   & 3  & 0,05   &0,1      &0,003      &631,42\\
+12  &Coronet    &75     & 97    & 2,59  & 5  & 0,07   &0,11     & 0,0029    &1034,95\\
+13  &Usa        &100    &171    & 3,42  & 6  &0,06    &0,11     & 0,0022    &1720,56\\
+\hline
 \end{tabular}
-\hline
 \end{table}
-\section{Resultados e Discussões}
+\section{Resultados e Discussões}\label{sec:result}
 
 %exemplo de inserir img
 % \begin{figure}[htp]
@@ -149,7 +155,7 @@ Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_B$ & $C
 
 %graficos
 %analises
-\section{Conclusão e Trabalhos Futuros}
+\section{Conclusão e Trabalhos Futuros}\label{sec:conc}
 
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
