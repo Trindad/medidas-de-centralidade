@@ -3,44 +3,69 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
-You've used 1 entry,
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2041 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2191 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2191 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2191 of file sbc.bst
+Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
+while executing---line 2191 of file sbc.bst
+You've used 5 entries,
             1935 wiz_defined-function locations,
-            475 strings with 3784 characters,
-and the built_in function-call counts, 277 in all, are:
-= -- 27
-> -- 7
-< -- 1
-+ -- 2
-- -- 2
-* -- 16
-:= -- 60
-add.period$ -- 3
-call.type$ -- 1
-change.case$ -- 6
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 11
-empty$ -- 18
-format.name$ -- 3
-if$ -- 49
+            500 strings with 4416 characters,
+and the built_in function-call counts, 1861 in all, are:
+= -- 192
+> -- 35
+< -- 7
++ -- 14
+- -- 10
+* -- 123
+:= -- 315
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 30
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 85
+empty$ -- 144
+format.name$ -- 15
+if$ -- 385
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 8
-num.names$ -- 3
-pop$ -- 4
+missing$ -- 4
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 20
 preamble$ -- 1
-purify$ -- 6
+purify$ -- 30
 quote$ -- 0
-skip$ -- 11
+skip$ -- 79
 stack$ -- 0
-substring$ -- 12
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 160
+swap$ -- 22
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 30
 warning$ -- 0
-while$ -- 2
+while$ -- 17
 width$ -- 0
-write$ -- 15
+write$ -- 67
+(There were 12 error messages)

@@ -1,8 +1,31 @@
 \begin{thebibliography}{}
 
+\bibitem[Brandes 2001]{Brandes01afaster}
+Brandes, U. (2001).
+\newblock A faster algorithm for betweenness centrality.
+\newblock {\em Journal of Mathematical Sociology}, 25:163--177.
+
+\bibitem[Freeman 1977]{freeman}
+Freeman, L.~C. (1977).
+\newblock A set of centrality based on betweenness.
+\newblock {\em Sociometry}, pages 35--41.
+
 \bibitem[Freitas 2010]{freitas}
 Freitas, L. Q.~d. (2010).
 \newblock Medidas de centralidade em grafos.
 \newblock Master's thesis, Universidade Federal do Rio de Janeiro.
+
+\bibitem[Pavan 2010]{pavan}
+Pavan, Claunir, M. R. J. d. R. P.~A. (2010).
+\newblock Generation realistic optical transport network topologies.
+\newblock {\em IEEE/OSA Journal of Optical Communications and Networking},
+  2:80--90.
+
+\bibitem[Vladimir~Ufimtsev 2013]{ufimtsev}
+Vladimir~Ufimtsev, A. S.~B. (2013).
+\newblock Identifying high betweenness centrality vertices in large noisy
+  networks.
+\newblock {\em IEEE 27th International Symposium on Parallel \& Distributed
+  Processing Workshops and PhD Forum}, pages 2234--2237.
 
 \end{thebibliography}
