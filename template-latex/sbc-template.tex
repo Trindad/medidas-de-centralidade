@@ -4,7 +4,7 @@
 \usepackage{array}
 \usepackage{graphicx,url}
 \usepackage[tight,footnotesize]{subfigure}
-
+\usepackage{enumerate}
 %encoding
 %--------------------------------------
 \usepackage[utf8]{inputenc}
@@ -73,8 +73,11 @@
 %resultados
 %conclusão
 \begin{resumo} 
-As medidas de centralidade buscam medir a variação da relevância dos vértices, em função de algumas invariantes do grafo.
- A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis para cinco medidas de centralidade, a centralidade de grau, de intermediação, de eficiência e proximidade.
+As medidas de centralidade buscam obter a relevância dos vértices, em função de algumas invariantes do grafo.
+ A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis para cinco medidas de centralidade: a centralidade de grau, de intermediação, de eficiência e proximidade.
+ Estas medidas podem influenciar diretamenta no custo da rede.
+ Sendo assim a avaliação de características relevantes podem ser utilizadas em modelos matemáticos.
+O presente artigo obteve como  
 
 \end{resumo}
 
@@ -108,20 +111,22 @@ Em  Pesquisa  Operacional,  alguns  problemas  de  localização  consistem  em 
 
 Com o intuito de resolver este tipo de problemas foi que, em 1995,  HAGE e HARARY propuseram a medida de {\it Centralidades de eficiência} que baseia-se no conceito de excentricidade de um vértice e pode ser definida como: 
 
-    Seja  {\it G} um grafo conexo com {\it n} vértices  e seja $v_k$ um vértice de {\it G}, a {\it centralidade de eficiência} de $v_k$ é dada pelo inverso da excentricidade de $v_k$, ou seja,
+Seja  {\it G} um grafo conexo com {\it n} vértices  e seja $v_k$ um vértice de {\it G}, a {\it centralidade de eficiência} de $v_k$ é dada pelo inverso da excentricidade de $v_k$, ou seja,
 \begin{center}
 \begin{equation}
 C_{eff}(v_k)= \frac{1}{e_{(v_k)}},
 \end{equation}
 \end{center}
-    Em nosso algoritmo desenvolvemos uma função para executar esta fórmula que de forma geral segue os seguintes passos:
-\begin{itemize}
+Em nosso algoritmo desenvolvemos uma função para executar esta fórmula que de forma geral segue os seguintes passos:
+\begin{enumerate}
 \item Busca pelo maior número de saltos do vértice quanto a todos ou outros, utilizando a matriz dennominada {\it caminhoMinimo} previamene calculada.
 \item Depois efetua-se o cálculo da centralidade de eficiência de cada vértice aproveitando o laço para guardar qual é o maior valor resultante que será o valor da centralidade da rede.
 \item Por último obtém-se o valor da centralidade de eficiência e todos os vértices que resultam neste valor. 
-\end{itemize}    
+\end{enumerate} 
+   
 \subsection{Centralidade de Grau}
 %conceituar medidas
+
 \subsection{Centralidade de Intermediação}
 \cite{freitas} cita que a centralidade de intermedição foi introduzida com o objetivo de expessar a influência que um vértice sobre seus pares em um grafo.
 A medida consiste em obter o número de geodésicas entre todos os pares de vértices do grafo a partir de um determinado vértice \cite{freitas}.
@@ -136,12 +141,12 @@ onde $b_{ij}$ representa o número total de geodésicas entre os vértices $i$ e
 Sendo o nó com maior centralidade de intermediação será o mais central da rede \cite{ufimtsev} \cite{freeman}.
 
 O algoritmo de \cite{Brandes01afaster} foi utilizado para calcular a centralidade de intermediação, com as seguintes etapas:
-\begin{itemize}
-\item Obtêm as geodésicas de $i$ a $j$
-\item Verifica se existe o nó $v_k$ em alguma geodésica de $i$ até $j$
-\item Calcula a centralidade de intermediação para todos os nós
-\end{itemize}
-Estas etapas serão repetidas de $0 <$ ao número de nós na topologia.
+\begin{enumerate}
+\item Obter as geodésicas de $i$ a $j$.
+\item Verificar se existe o nó $v_k$ em alguma geodésica de $i$ até $j$.
+\item Calcular a centralidade de intermediação para todos os nós.
+\end{enumerate}
+Onde serão repetidas de $k = 0,1,2,\dots,n$.
 
 \subsection{Centralidade de Proximidade}
 A mais simples e natural das medidas de centralidade do vértice baseada na proximidade foi chamada de centralidade de proximidade, e é baseada na soma das distâncias de um  vértice em relação aos demais vértices do grafo\cite{freitas}.
@@ -153,11 +158,11 @@ C_C(v_k)=\frac{1}{\sum\limits_{j = 1}^n dist(v_j,v_k)},
 \end{equation}
 \end{center}
 Sendo {\it G} um grafo conexo com {\it n} vértices e seja $v_k$ um vértice de {\it G}. A centralidade de proximidadede $v_k$ é dada pelo inverso da soma das distâncias de $v_k$ a todos os demais vértices do grafo.
-    Para realizarmos esta fórmula em nosso algoritmo efetuamos os seguintes passos:
-\begin{itemize}
+Para realizarmos esta fórmula em nosso algoritmo efetuamos os seguintes passos:
+\begin{enumerate}
 \item Utiliza-se a matriz de caminhos mínimos criada anteriormente para fazer o cálculo proposto na fórmula anterior e guardar qual o menor valor encontrado.
 \item Posteriormente é procurado pelo menor valor, o qual será obtido como resultado final junto com todos os vértices que possuem este valor.
-\end{itemize}
+\end{enumerate}
 %conceituar medidas
 
 \section{Metodologia}\label{sec:met}

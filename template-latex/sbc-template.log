@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.22)  27 NOV 2014 21:29
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.1.22)  28 NOV 2014 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -142,10 +142,14 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip51
 \subfig@bottom=\skip52
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks18
+)
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks18
-\inpenc@posthook=\toks19
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
@@ -391,8 +395,8 @@ Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 \XKV@depth=\count97
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
@@ -432,10 +436,6 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@loff=\dimen135
 \@vwid@roff=\dimen136
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks22
-)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup4
@@ -1331,7 +1331,7 @@ LaTeX Font Info:    Try loading font information for T1+jkptt on input line 64.
 (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkptt.fd
 File: t1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for T1/jkptt.
 )
-Underfull \hbox (badness 4144) in paragraph at lines 87--88
+Underfull \hbox (badness 4144) in paragraph at lines 90--91
 \T1/jkp/m/n/12 Características rel-e-vantes de topolo-gias so-bre-viventes são 
 iden-ti-fi-cas em
  []
@@ -1351,29 +1351,23 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Try loading font information for TS1+jkp on input line 125.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/ts1jkp.fd
-File: ts1jkp.fd 2007/08/30 Fontinst v1.928 font definitions for TS1/jkp.
-)
-LaTeX Font Info:    Try loading font information for T1+jkpss on input line 139
+[2]
+LaTeX Font Info:    Try loading font information for T1+jkpss on input line 174
 .
-
-(/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/kpfonts/t1jkpss.fd
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 )
-Overfull \hbox (1.95233pt too wide) in paragraph at lines 141--160
+Overfull \hbox (1.95233pt too wide) in paragraph at lines 176--195
  [][] 
  []
 
-(./sbc-template.bbl [2]) [3] (./sbc-template.aux) ) 
+(./sbc-template.bbl [3]) [4] (./sbc-template.aux) ) 
 Here is how much of TeX's memory you used:
- 11644 strings out of 495059
- 161905 string characters out of 3182030
+ 11605 strings out of 495059
+ 161364 string characters out of 3182030
  310615 words of memory out of 3000000
- 14531 multiletter control sequences out of 15000+200000
- 83753 words of font info for 85 fonts, out of 3000000 for 9000
+ 14497 multiletter control sequences out of 15000+200000
+ 83021 words of font info for 83 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  40i,10n,54p,672b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-di
@@ -1387,10 +1381,10 @@ ive/texmf-dist/fonts/type1/public/kpfonts/jkpmn8a.pfb></usr/share/texlive/texmf
 onts/type1/public/kpfonts/jkpsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/kpfonts/jkpsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/kpf
 onts/jkpttmn8a.pfb>
-Output written on sbc-template.pdf (3 pages, 93053 bytes).
+Output written on sbc-template.pdf (4 pages, 97765 bytes).
 PDF statistics:
- 55 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 58 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
