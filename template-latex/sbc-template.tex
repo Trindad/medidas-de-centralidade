@@ -77,7 +77,8 @@ As medidas de centralidade buscam obter a relevância dos vértices, em função
  A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis para cinco medidas de centralidade: a centralidade de grau, de intermediação, de eficiência e proximidade.
  Estas medidas podem influenciar diretamenta no custo da rede.
  Sendo assim a avaliação de características relevantes podem ser utilizadas em modelos matemáticos.
- Estudos revelaram que a centralidade de proximidade é influenciada pelo grau médio; a centralidade de intermediação pelo número de ligações e nós, a centralidade de 
+O presente artigo obteve como  
+
 \end{resumo}
 
 
@@ -86,7 +87,7 @@ As medidas de centralidade buscam obter a relevância dos vértices, em função
 %gap
 %metodo proposto
 
-Características relevantes de topologias sobreviventes são identificas em \cite{pavan} a partir de um conjunto de $29$ topologias físicas de redes reais, com número de nós de 9 à 100.
+Características relevantes de topologias sobreviventes são identificas em \cite{pavan} a partir de conjunto de $29$ topologias físicas de redes reais, variando o número de nós de 9 à 100.
 
 Em \cite{Brandes01afaster} é apresentado um algoritmo para obter a centralidade de intermediação do grafo, executando em $O(nm + n^2 log n)$, sendo $m$ o número de ligações e $n$ o número de nós.
 Com o algoritmo podemos obter a centralidade de eficiência e proximidade, sendo que a mesmas utilizam de caminhos mínimos.
@@ -99,7 +100,7 @@ E finalmente na Seção \ref{sec:conc} as conclusões e trabalhos futuros serão
 \section{Medidas de Centralidade}\label{sec:mc}
 
 O estudo de redes é de grande interesse na área científica, dada a capacidade de uma rede poder representar por meio de modelagem diversos problemas de natureza real.
-Em grafos como modelos para redes, as medidas de centralidade buscam medir a variação da relevância dos vértices, em função de algumas invariantes do grafo \cite{freitas}.
+Em grafos como modelos para redes, as medidas de centralidade buscam medir a variação da relevância dos vértices, em função de alguns invariantes do grafo \cite{freitas}.
 
 Em \cite{freitas} intuitivamente, em uma rede, os nós mais centrais são aqueles que a partir dos quais podemos atingir qualquer outro com mais facilidade ou rapidez.
 Este trabalho é direcionado a medidas de centralidade para redes de telecomunicações.
@@ -118,13 +119,32 @@ C_{eff}(v_k)= \frac{1}{e_{(v_k)}},
 \end{center}
 Em nosso algoritmo desenvolvemos uma função para executar esta fórmula que de forma geral segue os seguintes passos:
 \begin{enumerate}
-\item Busca pelo maior número de saltos do vértice quanto a todos ou outros, utilizando a matriz denominada {\it caminhoMinimo} previamene calculada.
+\item Busca pelo maior número de saltos do vértice quanto a todos ou outros, utilizando a matriz dennominada {\it caminhoMinimo} previamene calculada.
 \item Depois efetua-se o cálculo da centralidade de eficiência de cada vértice aproveitando o laço para guardar qual é o maior valor resultante que será o valor da centralidade da rede.
 \item Por último obtém-se o valor da centralidade de eficiência e todos os vértices que resultam neste valor. 
 \end{enumerate} 
    
 \subsection{Centralidade de Grau}
-%conceituar medidas
+Na centralidade de grau, é considerado que o conforme o grau do vértice mais centralizado ele é considerado.
+Na equação o somatório onde o grau do vértice $d_{k}$ é constuido pela soma da matriz de ajdacência $a_{kj}$.
+\begin{center}
+\begin{equation}
+d_{k}= \sum_{j=1}^{n}a_{kj}
+\end{equation}
+\end{center}
+Na centralidade relativa é usada a porpoção do valor do grau em relação do tamanho do grafo.
+\begin{center}
+\begin{equation}
+{c}'_{d}(v_{k})=\frac{dk}{n-1}
+\end{equation}
+\end{center}
+O algortimo de cálculo da centralidade de grau é o seguinte:
+\begin{enumerate}
+\item Considera o grau máximo como zero.
+\item Inicia um laço em uma lista de nós onde se compara o valor máximo com o valor do grau, considerando o nó atual.
+\item Caso o valor do nó atual seja maior, ele substitui o valor máximo pelo seu valor.
+\item Com o valor maximo já estabelecido, se usa mais um laço para listar os nós de grau máximo.
+\end{enumerate}
 
 \subsection{Centralidade de Intermediação}
 \cite{freitas} cita que a centralidade de intermedição foi introduzida com o objetivo de expessar a influência que um vértice sobre seus pares em um grafo.
@@ -165,7 +185,7 @@ Para realizarmos esta fórmula em nosso algoritmo efetuamos os seguintes passos:
 %conceituar medidas
 
 \section{Metodologia}\label{sec:met}
-Em \cite{pavan} 
+
 
 %como foi feito
 %descrever etapas
@@ -177,7 +197,7 @@ Em \cite{pavan}
 Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_G$ & $C_R$ & $C_E$ & $C_P$ & $C_I$\\ 
 \hline
 1   &Abilenecore &10    &13     &2.6    &3   &0.33    &0.33     &0.0625     & 12.58\\
-2   &RNP        &10     &12     &2.4   &3   &0.33    &0.33     &0.0588     &10.5\\
+2   &RNP        &10     &12     & 2.4   &3   &0.33    &0.33     &0.0588     &10.5\\
 3   &Learn      &10     & 11    &2.2    &3   &0.33    &0.33     &0.0555     &11.5\\
 4   &Bren       &10     & 11    &2.2    &3   &0.33    &0.33     &0.0555     &11.5\\
 5   &Germany    &17     & 26    &3.06   &6   &0.37    &0.33     &0.0333     &47.93\\
@@ -187,7 +207,8 @@ Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_G$ & $C
 9   &Metrona    &33     & 41    &2.48   &5   & 0.16   &0.17     & 0.0094    &239.5\\
 10  &Loni       &33     & 37    &2.24   & 6  & 0.19   &0.11     & 0.0078    &247.67\\
 11  &Internet2  &56     & 61    &2.18   & 3  & 0.05   &0.1      &0.003      &631.42\\
-12  &Usa        &100    &171    & 3.42  & 6  &0.06    &0.11     & 0.0022    &1720.56\\
+12  &Coronet    &75     & 97    & 2.59  & 5  & 0.07   &0.11     & 0.0029    &1034.95\\
+13  &Usa        &100    &171    & 3.42  & 6  &0.06    &0.11     & 0.0022    &1720.56\\
 \hline
 \end{tabular}
 \end{table}
@@ -204,8 +225,7 @@ Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_G$ & $C
 %graficos
 %analises
 \section{Conclusão e Trabalhos Futuros}\label{sec:conc}
-A partir de um conjunto de redes reais foi obtido cinco medidas de centralidade: centralidade de intermediação, centralidade de proximidade, centralidade de intermediação, centralidade de proximidade e centralidade de grau.
-Através destas medidas foram analizadas as variáveis de relevância para cada uma, onde para a centralidade de grau obteve como característica o ; na centralidade de intermediação as variáveis que influenciaram forma o número de ligações e o de nós; na centralidade de proximidade as variáveis foram e na centralidade de grau .
+
 \bibliographystyle{sbc}
 \bibliography{sbc-template}
 
