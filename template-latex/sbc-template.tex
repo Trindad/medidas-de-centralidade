@@ -73,11 +73,14 @@
 %resultados
 %conclusão
 \begin{resumo} 
+
 As medidas de centralidade buscam obter a relevância dos vértices, em função de algumas invariantes do grafo.
  A partir de um conjunto de redes ópticas de telecomunicações foi realizado uma análise sobre a influência de varáveis para cinco medidas de centralidade: a centralidade de grau, de intermediação, de eficiência e proximidade.
- Estas medidas podem influenciar diretamenta no custo da rede.
+ Estas medidas podem influenciar diretamenta no custo da rede e na sua performance.
  Sendo assim a avaliação de características relevantes podem ser utilizadas em modelos matemáticos.
-O presente artigo obteve como  
+O presente artigo obteve uma análise de redes, possibilitando a identificação de características relevantes e que são importantes para diversos estudos práticos, podendo influenciar diretamente na implantação de uma rede.
+As medidas de centralidade buscam obter os vértices relevantes em função de algumas invariantes do grafo.
+ Os estudos revelaram que a centralidade de proximidade é influenciada pelo grau médio; a centralidade de intermediação pelo número de ligações e nós, a centralidade de eficiência pelo grau medio.
 
 \end{resumo}
 
@@ -86,15 +89,22 @@ O presente artigo obteve como
 %contextualização
 %gap
 %metodo proposto
+As redes de telecomunicações envolvem uma série de cálculos e análises prévias para sua eficiente implantação, previnindo sobrecargas e garantindo sua integridade.
+Em \cite{pavan} são apresentadas algumas características para as topologias físicas de redes reais devem respeitar alguns pré requisitos, entre eles estão: o grafo que representa a topologia deve ser  2-conexo, o grau minimo de cada nó deve ser dois e devem existir no mínimo dois caminhos disjuntos de um nó de arigem até um de destino.
 
-Características relevantes de topologias sobreviventes são identificas em \cite{pavan} a partir de conjunto de $29$ topologias físicas de redes reais, variando o número de nós de 9 à 100.
+A análise da confiabilidade de rede e a identificação de seus principais elementos são importantes ferramentas para diversos estudos práticos, como por exemplo, a expansão e manutenção de sistemas elétricos, de transportes e de telecomunicações \cite{silva}.
+Em \cite{pavan} são identificadas características relevantes de topologias sobreviventes a partir de um conjunto de $29$ topologias físicas de redes reais, com número de nós de 9 à 100 levando em concideração algumas variáveis, \textit{INSERIR AS VARIÀVEIS}. 
 
+
+
+O método proposto faz um estudo de cinco medidas de centralidade em redes ópticas de telecomunicações.
+Utilizamos um conjunto de $12$ redes de referência, onde para cada uma é obtido as medidas citadas.
 Em \cite{Brandes01afaster} é apresentado um algoritmo para obter a centralidade de intermediação do grafo, executando em $O(nm + n^2 log n)$, sendo $m$ o número de ligações e $n$ o número de nós.
-Com o algoritmo podemos obter a centralidade de eficiência e proximidade, sendo que a mesmas utilizam de caminhos mínimos.
+Com o algoritmo obtivemos também centralidade de eficiência e proximidade, sendo que a mesmas utilizam de caminhos mínimos para determinarem seus resultados.
 
-O presente artigo esta organizado da seguinte forma: na Seção \ref{sec:mc} é apresentado o conceito de medidas de centralidade bem como as que foram utilizadas.
+O presente artigo esta organizado da seguinte forma: na Seção \ref{sec:mc} é apresentado o conceito das medidas de centralidade que são análisadas no mesmo.
 Posteriomente na  Seção \ref{sec:met} será abordado o método utilizado. 
-Na Seção \ref{sec:result} é apresentado os resultados.
+Na Seção \ref{sec:result} são apresentados os resultados.
 E finalmente na Seção \ref{sec:conc} as conclusões e trabalhos futuros serão expostos. 
 
 \section{Medidas de Centralidade}\label{sec:mc}
@@ -102,9 +112,7 @@ E finalmente na Seção \ref{sec:conc} as conclusões e trabalhos futuros serão
 O estudo de redes é de grande interesse na área científica, dada a capacidade de uma rede poder representar por meio de modelagem diversos problemas de natureza real.
 Em grafos como modelos para redes, as medidas de centralidade buscam medir a variação da relevância dos vértices, em função de alguns invariantes do grafo \cite{freitas}.
 
-Em \cite{freitas} intuitivamente, em uma rede, os nós mais centrais são aqueles que a partir dos quais podemos atingir qualquer outro com mais facilidade ou rapidez.
-Este trabalho é direcionado a medidas de centralidade para redes de telecomunicações.
-Cada medida influenciada por $n$ variáveis, grau, número de ligações, número de nós, dentre outras.
+Em \cite{freitas} intuitivamente, em uma rede, os nós mais centrais são aqueles que a partir dos quais podemos atingir qualquer outro com mais facilidade ou rapidez. Buscamos com este trabalho direcionar as medidas para redes de telecomunicações as quais são influenciadas por $n$ variáveis, grau, número de ligações, número de nós, dentre outras.
 
 \subsection{Centralidade de Eficiência}
 Em  Pesquisa  Operacional,  alguns  problemas  de  localização  consistem  em  se determinar um local de modo que minimize o tempo máximo de viagem entre o mesmo e todas as demais localizações.Estes problemas possuem diversas aplicações práticas, como  por  exemplo,  a  instalação  de  um  hospital,  cujo objetivo  é  minimizar  o  tempo máximo de atendimento de uma ambulância a uma possível emergência\cite{freitas}.
@@ -125,8 +133,8 @@ Em nosso algoritmo desenvolvemos uma função para executar esta fórmula que de
 \end{enumerate} 
    
 \subsection{Centralidade de Grau}
-Na centralidade de grau, é considerado que o conforme o grau do vértice mais centralizado ele é considerado.
-Na equação o somatório onde o grau do vértice $d_{k}$ é constuido pela soma da matriz de ajdacência $a_{kj}$.
+Na centralidade de grau, é considerado que o grau do vértice mais centralizado como principal.
+Segundo \cite{freitas} na equação o somatório onde o grau do vértice $d_{k}$ é constuido pela soma da matriz de ajdacência $a_{kj}$.
 \begin{center}
 \begin{equation}
 d_{k}= \sum_{j=1}^{n}a_{kj}
@@ -135,7 +143,7 @@ d_{k}= \sum_{j=1}^{n}a_{kj}
 Na centralidade relativa é usada a porpoção do valor do grau em relação do tamanho do grafo.
 \begin{center}
 \begin{equation}
-{c}'_{d}(v_{k})=\frac{dk}{n-1}
+{c}'_{d}(v_{k})=\frac{d_k}{n-1}
 \end{equation}
 \end{center}
 O algortimo de cálculo da centralidade de grau é o seguinte:
@@ -185,7 +193,10 @@ Para realizarmos esta fórmula em nosso algoritmo efetuamos os seguintes passos:
 %conceituar medidas
 
 \section{Metodologia}\label{sec:met}
+Em \cite{Brandes01afaster} é apresentada uma proposta de algoritmo para calcular a centralidade de intermediação de um vértice em um grafo. O mesmo utiliza do método dos caminhos de Dijkstra com a modificação, busca todos os caminhos mínimos ao invés de um único entre um vértice origem $s$ em um de destino $t$.
 
+As medidas de centralidade apresentadas neste artigo utilizam de caminhos mínimos, assim fez-se o uso do algoritmo de \cite{Brandes01afaster} para obter as geodésicas dos grafos que representam as redes de telecomunicações.
+A execução deste algoritmo resultos em uma conjunto de dados que são apresentados na Tabela \ref{tab:tab1}. 
 
 %como foi feito
 %descrever etapas
@@ -212,6 +223,19 @@ Número & Rede & \textit{N} & \textit{L} & $\langle \delta \rangle$ & $C_G$ & $C
 \hline
 \end{tabular}
 \end{table}
+
+ a centralidade de intermediação pelo número de ligações e nós, a centralidade de eficiência pelo grau medio.
+ 
+A centralidade de proximidade $C_P$ é direteamente influenciada pelo grau médio da rede $\langle \delta \rangle$, quanto maior o grau médio maior será o valor da centralidade de proximidade em redes com o mesmo número de nós. Esta medida pode ser considerada estável quanto a variações não contendo grandes diferenças entre redes de maior pra menor porte e vice-versa.
+
+Da mesma forma, a centralidade de efeciência $C_E$ é influênciada pelo grau médio $\langle \delta \rangle$, porém a centralidade de eficiência sofre menos oscilações pelo grau médio variando de $0>C_E<=0.5$, onde 0.5 é considerada uma eficiência ótima para este conjunto de dados.
+
+Já a centralidade de grau $C_G$ não sofre influência de outras invariantes da rede além do próprio grau do nó. 
+A centralidade relativa de grau $C_R$ é unfluênciada pelo grau máximo e pelo número de vértices, quanto maior o número de ligações da rede menor é a medida.
+
+
+
+
 \section{Resultados e Discussões}\label{sec:result}
 
 %exemplo de inserir img
