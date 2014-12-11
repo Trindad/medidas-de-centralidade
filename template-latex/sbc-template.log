@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.27)  5 DEC 2014 20:14
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.27)  11 DEC 2014 00:02
 entering extended mode
 **sbc-template.tex
 
@@ -1171,11 +1171,14 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
 (E:\Usuario\Desktop\medidas-de-centralidade-master\medidas-de-centralidade\temp
-late-latex\sbc-template.aux)
+late-latex\sbc-template.aux
+
+LaTeX Warning: Label `fig:fig4' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 62.
 LaTeX Font Info:    Try loading font information for OML+jkp on input line 62.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\kpfonts\omljkp.fd"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\kpfonts\omljkp.fd"
 File: omljkp.fd 2006/08/15 v1.0
 )
 LaTeX Font Info:    ... okay on input line 62.
@@ -1302,11 +1305,7 @@ LaTeX Font Info:    Try loading font information for T1+jkptt on input line 64.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\kpfonts\t1jkptt.fd"
 File: t1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for T1/jkptt.
-)
-
-LaTeX Warning: Citation `silva' on page 1 undefined on input line 95.
-
-[1
+) [1
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1321,30 +1320,89 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-[2] [3]
-LaTeX Font Info:    Try loading font information for T1+jkpss on input line 204
+[2] [3] <Imagens/Eficiencia.png, id=20, 527.9725pt x 331.2375pt>
+File: Imagens/Eficiencia.png Graphic file (type png)
+
+<use Imagens/Eficiencia.png>
+Package pdftex.def Info: Imagens/Eficiencia.png used on input line 217.
+(pdftex.def)             Requested size: 395.9784pt x 248.4275pt.
+LaTeX Font Info:    Try loading font information for T1+jkpss on input line 218
 .
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\kpfonts\t1jkpss.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\kpfonts\t1jkpss.fd"
 File: t1jkpss.fd 2007/07/16 Fontinst v1.928 font definitions for T1/jkpss.
 )
-Overfull \hbox (1.95233pt too wide) in paragraph at lines 206--225
+<Imagens/GrauRelativa.png, id=22, 573.14125pt x 325.215pt>
+File: Imagens/GrauRelativa.png Graphic file (type png)
+
+<use Imagens/GrauRelativa.png>
+Package pdftex.def Info: Imagens/GrauRelativa.png used on input line 224.
+(pdftex.def)             Requested size: 429.85487pt x 243.91064pt.
+
+Overfull \hbox (3.06352pt too wide) in paragraph at lines 224--225
  [][] 
  []
 
-[4]
+<Imagens/Intermediacao.png, id=23, 588.1975pt x 331.2375pt>
+File: Imagens/Intermediacao.png Graphic file (type png)
+
+<use Imagens/Intermediacao.png>
+Package pdftex.def Info: Imagens/Intermediacao.png used on input line 231.
+(pdftex.def)             Requested size: 441.14703pt x 248.4275pt.
+
+Overfull \hbox (14.35568pt too wide) in paragraph at lines 231--232
+ [][] 
+ []
+
+<Imagens/proximidade.png, id=24, 637.38126pt x 335.2525pt>
+File: Imagens/proximidade.png Graphic file (type png)
+
+<use Imagens/proximidade.png>
+Package pdftex.def Info: Imagens/proximidade.png used on input line 238.
+(pdftex.def)             Requested size: 478.03477pt x 251.43875pt.
+
+Overfull \hbox (51.24342pt too wide) in paragraph at lines 238--239
+ [][] 
+ []
+
+<Imagens/ProximidadeEficiencia.png, id=25, 680.5425pt x 405.515pt>
+File: Imagens/ProximidadeEficiencia.png Graphic file (type png)
+
+<use Imagens/ProximidadeEficiencia.png>
+Package pdftex.def Info: Imagens/ProximidadeEficiencia.png used on input line 2
+45.
+(pdftex.def)             Requested size: 476.3765pt x 283.85855pt.
+
+Overfull \hbox (49.58514pt too wide) in paragraph at lines 245--246
+ [][] 
+ []
+
+
+Overfull \hbox (1.95233pt too wide) in paragraph at lines 258--277
+ [][] 
+ []
+
+[4] [5 <E:/Usuario/Desktop/medidas-de-centralidade-master/medidas-de-centralida
+de/template-latex/Imagens/Eficiencia.png> <E:/Usuario/Desktop/medidas-de-centra
+lidade-master/medidas-de-centralidade/template-latex/Imagens/GrauRelativa.png>]
+[6 <E:/Usuario/Desktop/medidas-de-centralidade-master/medidas-de-centralidade/t
+emplate-latex/Imagens/Intermediacao.png> <E:/Usuario/Desktop/medidas-de-central
+idade-master/medidas-de-centralidade/template-latex/Imagens/proximidade.png>]
+[7 <E:/Usuario/Desktop/medidas-de-centralidade-master/medidas-de-centralidade/t
+emplate-latex/Imagens/ProximidadeEficiencia.png>]
 (E:\Usuario\Desktop\medidas-de-centralidade-master\medidas-de-centralidade\temp
-late-latex\sbc-template.bbl [5]) [6]
+late-latex\sbc-template.bbl) [8]
 (E:\Usuario\Desktop\medidas-de-centralidade-master\medidas-de-centralidade\temp
 late-latex\sbc-template.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11307 strings out of 493921
- 158209 string characters out of 3144872
- 307133 words of memory out of 3000000
- 14334 multiletter control sequences out of 15000+200000
+ 11340 strings out of 493921
+ 158970 string characters out of 3144872
+ 308244 words of memory out of 3000000
+ 14360 multiletter control sequences out of 15000+200000
  83021 words of font info for 83 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  40i,10n,54p,677b,295s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1359,9 +1417,9 @@ ype1/public/kpfonts/jkpssbn8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/kpfonts/jkpsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
 c/kpfonts/jkpsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/kpfo
 nts/jkpttmn8a.pfb>
-Output written on sbc-template.pdf (6 pages, 112983 bytes).
+Output written on sbc-template.pdf (8 pages, 296374 bytes).
 PDF statistics:
- 62 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

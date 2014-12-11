@@ -1,7 +1,26 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: sbc-template.aux
 The style file: sbc.bst
 Database file #1: sbc-template.bib
-Warning--I didn't find a database entry for "silva"
+Repeated entry---line 54 of file sbc-template.bib
+ : @article{pavan
+ :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 73 of file sbc-template.bib
+ : @mastersthesis{freitas
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 87 of file sbc-template.bib
+ : @article{freeman
+ :                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 95 of file sbc-template.bib
+ : @article{ufimtsev
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 103 of file sbc-template.bib
+ : @article{Brandes01afaster
+ :                          ,
+I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
 while executing---line 1021 of file sbc.bst
 Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
@@ -26,4 +45,4 @@ Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto,
 while executing---line 1096 of file sbc.bst
 Too many commas in name 1 of "Pavan,Claunir,Morais ,R.M. ,J.R.F. da Rocha,Pinto, A.N." for entry pavan
 while executing---line 1096 of file sbc.bst
-(There were 12 error messages)
+(There were 17 error messages)
